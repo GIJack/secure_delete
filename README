@@ -1,10 +1,10 @@
 
 
-
                           S E C U R E   D E L E T E
 
 
            (c) 1997-2003 by van Hauser / THC  <vh@thc.org>
+
 
 			 http://www.thc.org
 
@@ -301,8 +301,8 @@
                  why this is a problem - and this one can't be solved.
                - How long are your files present on the server? Long enough
                  that they are written on a backup?
-               - A hacker or law enforcement/spies could have trojanized the
-                 server in a way that your files won't be overwritten and
+               - An attacker or the system administrator could have trojanized
+                 the server in a way that your files won't be overwritten and
                  removed but those files are written to a special place waiting
                  to be retrieved by them. Nearly all known network operating
                  systems and also some firewalls can be penetrated from remote,
