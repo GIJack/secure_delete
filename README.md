@@ -1,9 +1,15 @@
 # secure_delete
-Upload of THC.org's secure_delete package. This package used to be availble on
-THC.org. It was originally written by Van Hausen. VH has created a github, but
-so far has not uploaded this package. This package, is somewhat critical as
-other packages like nautilus-wipe depend upon it, so I have uploaded it to
-github.
+Fork of Van Hauser of THC's secure-delete package.
 
-I cannot take credit for this, but I am doing this to keep this publicly
-available. All attempts to contact VH have failed.
+Note on package tags. 3.1 is the original last release from VH. This is entirely
+unmolested from upstream. letter tags will be sequential.
+
+Re-released under same GPLv2 as the original.
+
+There are no new features planned, and it will work exactly as the original,
+only with maintenance done, and patches added from upstream to keep
+compatibility with modern systems long after it has been written
+
+Original found here: https://github.com/vanhauser-thc/THC-Archive/blob/master/Tools/secure_delete-3.1.tar.gz
+
+See README for original documentation
