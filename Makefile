@@ -7,7 +7,7 @@ DOC_DIR=/usr/share/doc/secure_delete
 OPT_MOD=-D__KERNEL__ -DMODULE -fomit-frame-pointer -fno-strict-aliasing -pipe -mpreferred-stack-boundary=2
 #LD_MOD=-r
 
-all: sdel-lib.o srm sfill sswap smem sdel-mod.o
+all: srm sfill sswap smem sdel-mod.o
 	@echo
 	@echo "A Puritan is someone who is deathly afraid that someone, somewhere, is"
 	@echo "having fun."
@@ -21,16 +21,16 @@ sdel-mod.o: sdel-mod.c
 sdel-lib.o: sdel-lib.c
 	$(CC) ${OPT} -c sdel-lib.c
 
-srm: srm.c
+srm: srm.c sdel-lib.o
 	$(CC) ${OPT} -o srm srm.c sdel-lib.o
 	-strip srm
-sfill: sfill.c
+sfill: sfill.c sdel-lib.o
 	$(CC) ${OPT} -o sfill sfill.c sdel-lib.o
 	-strip sfill
-sswap: sswap.c
+sswap: sswap.c sdel-lib.o
 	$(CC) ${OPT} -o sswap sswap.c sdel-lib.o
 	-strip sswap
-smem: smem.c
+smem: smem.c sdel-lib.o
 	$(CC) ${OPT} -o smem smem.c sdel-lib.o
 	-strip smem
 
